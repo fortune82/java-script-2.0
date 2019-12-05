@@ -1336,15 +1336,16 @@
 // t3();
 // console.log(a3_res);
 
-// ------------------------Task 4------------------РАЗОБРАТЬСЯ
+// ------------------------Task 4------------------РАЗОБРАТЬСЯ 
 // На странице созданы 3 span.task - 4 c атрибутом data.С помощью forEach переберите их и добавьте атрибуты в массив a4_res Запускаться решение должно при вызове функции t4.
 
-let task = document.querySelectorAll('.task-4');
-let data = task.getAttribute('data');
+// let task = document.querySelectorAll('span');
+// let det = task.getAttribute('data');
 
-let a4_res = [];
+// let a4_res = [];
 
-console.log(data);
+// console.log(det);
+
 // function t4() {
 //     task.forEarch(function (item) {
 //         a4_res.push(item);
@@ -1356,3 +1357,75 @@ console.log(data);
 
 // -----------------------Task 5--------------РАЗОБРАТЬСЯ
 // На странице созданы 3 p.task - 5 c атрибутом data.С помощью forEach переберите их и добавьте событие клик.Напишите функцию t5, которая будет запускаться при клике и добавлять атрибут data элемента, по которому кликнули в массив a5_res.
+
+
+// ----Unit 19. События мыши в JavaScript----------------
+//  ----------Task 1-----------------------
+// Добавьте на блок.div - 1 событие клик и по клику запуск функции t1.Функция должна возвращать и выводить на экран содержимое блока(только текст).Вывод осуществляется в out - 1.
+
+// document.querySelector(".div-1").onclick = function t1() {
+//     document.querySelector(".div-1").innerText = 'Hello';
+// }
+// let out = document.querySelector(".out");
+// document.querySelector(".div-1").onclick = function t1() {
+//     out.innerText = 'Hello';
+// }
+
+// -------Task 2----------------
+// Добавьте на блок.div - 2 событие клик и по клику запуск функции t2.Функция должна возвращать true или false в зависимости от того, нажата ли клавиша alt или нет в момент клика.Также, выводите на экран результат.Вывод осуществляется в out - 2.
+
+// let out = document.querySelector(".out");
+// document.querySelector(".div-2").onclick = function t2(event) {
+//     if (event.altKey) {
+//         out.innerText = 'true';
+//     } else(
+//         out.innerText = 'false'
+//     );
+//     console.log(event);
+// }
+
+// -------------------Task 3----------------
+// Добавьте на блок.div - 2 событие клик.При клике - увеличивайте ширину блока на 5px.Каждый клик - увеличение ширины на 5px. 10 кликов - на 50px.Ширину выводите в out - 3.
+
+// let out = document.querySelector(".out");
+// let block = document.querySelector(".div-2");
+// let step = 100;
+// block.onclick = function t3(e) {
+//     step += 5;
+//     block.style.width = step + 'px';
+//     out.innerText = step;
+// }
+
+// --------------------Task 4--------------------------
+// Добавьте на блок.div - 2 событие двойной клик и по двойному клику запуск функции t4.Функция должна возвращать и выводить на экран содержимое блока(только текст).Вывод осуществляется в out - 4.
+// let out = document.querySelector(".out");
+// document.querySelector(".div-2").ondblclick = function t1() {
+//     out.innerText = 'Hello';
+//     console.log('out');
+// }
+
+// ----------------------Task 5----------------
+// Дан блок.div - 2.active.Добавьте на него событие двойной клик, по которому удалется класс active если он есть и добавляется если такого класса нет.
+// let active = document.querySelector(".div-2", ".active");
+// active.ondblclick = function (event) {
+//     if (active.classList.contains('active')) {
+//         active.classList.remove('active');
+//     } else(
+//         active.classList.add('active'));
+// }
+
+// ---------Task 6-------------------------
+// Дан блок.div - 2 и список.ul - 6. При двойном клике на блоке скрывайте.ul - 6 если он показан и показывайте если скрыт.Скрытие и показ делайте через добавление - удаление класса.hide
+
+// let block = document.querySelector(".div-2");
+// let nav = document.querySelector(".hide");
+// block.ondblclick = () => {
+//     if (nav.classList.contains('hide')) {
+//         nav.classList.remove("hide");
+//     } else {
+//         nav.classList.add("hide");
+//     }
+// }
+
+// ---------Task 7---------------------
+// Дан блок .div-7. При клике правой кнопкой мыши на блоке добавляйте ему класс .active. При повторном клике - удаляйте.

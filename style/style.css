@@ -7,3 +7,20 @@ body {
     color: green;
     background-color: bisque;
 } */
+
+/* Ниже Div для урока 19 события мыши  */
+.div-1,
+.div-2 {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+/* ---------Task 6  урока 19------------------------- */
+.hide {
+    display: none;
+    list-style: disc;
+}
+
+/* --------------------- */
