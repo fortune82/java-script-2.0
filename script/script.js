@@ -1434,15 +1434,97 @@
 //     return false;
 // }
 
+// ----------------------Task 9-----------------
+// Дан блок.div - 1. Внутри блока - изображение 1.png.При клике правой кнопкой мыши - меняйте изображение на 2.png.Надеюсь вы догадаетесь изменить только src изображения ?
+// let backgrImage = document.querySelector(".div-1");
+// backgrImage.oncontextmenu = () => {
+//     backgrImage.innerHTML = `<img src="D:/картинки и живопись/ОБОИ/nenavidet.jpg" alt="картинка надпись" width="1920" height="1080">`;
+//     return false;
+// }
+
+// --------------------Task 10-----------------------
+// Дан блок.div - 10. Внутри блока - изображение 1.png.При наведении мыши(mouseenter) - меняйте изображение на 2.png.
+// let backgrImage = document.querySelector('.div-1');
+// backgrImage.onmouseenter = () => {
+//     backgrImage.innerHTML = `<img src="D:/картинки и живопись/ОБОИ/nenavidet.jpg" alt="картинка надпись" width="1920" height="1080">`
+// }
 
 
 
 
-// --------------------Task 8------- Дорешать----------------
+
+
+// --------------------Task 8------- РАЗОБРАТЬСЯ----------------
 // Дано checkbox .ch-8. Повесьте на него событие onchange при котором на документе отключается клик правой кнопкой мыши если checkbox выбран и отключает если не выбран.
 
-// Task 9.
-// Дан блок.div - 9. Внутри блока - изображение 1.png.При клике правой кнопкой мыши - меняйте изображение на 2.png.Надеюсь вы догадаетесь изменить только src изображения ?
+// document.querySelectorAll('ch-1').onchange = () => {
+//     for (i = 0; i < document.querySelectorAll('ch-1').length; i++)
+//         if (document.querySelector('ch-1')).checked) {
+//     this.document.querySelector('ch-1').oncontextmenu = () => {
+//         return false;
+//     }
+// }
+// i++
+// }
 
-//     Task 10.
-// Дан блок.div - 10. Внутри блока - изображение 1.png.При наведении мыши(mouseenter) - меняйте изображение на 2.png.
+
+
+
+
+
+
+//------------Unit 20. События клавиатуры в JavaScript----------
+// -------------ЗАДАЧА 1--------------------
+// Дан input.i - 1. Напишите функцию t1, которая выводит в.out - 1 символ и возвращает его.Во всех последующих задачах - работаем с латиницей и цифрами.
+// let input = document.querySelector('.input-1');
+// let out = document.querySelector('.out');
+// input.onkeypress = function t1(event) {
+//     console.log(event);
+//     out.innerHTML = event.key;
+// }
+
+// -------------ЗАДАЧА 2--------------------
+// Дан input.i - 2. Напишите функцию t2, которая выводит в.out - 2 код символа и возвращает его.
+// let input2 = document.querySelector('.input-2');
+// let out2 = document.querySelector('.out-2');
+// input2.onkeypress = function t1(event) {
+//     out2.innerHTML = event.charCode;
+// }
+
+// -------------ЗАДАЧА 3--------------------
+// Дан input.i - 3. Напишите функцию t3, которая выводит на страницу true если введен символ и false если цифра.Для определения - используйте код клавиши.
+// let out3 = document.querySelector('.out-3')
+// document.querySelector(".input-3").onkeypress = function t3(event) {
+//     if (event.key >= 0 && event.key <= 10) {
+//         out3.innerHTML = false;
+//     } else {
+//         out3.innerHTML = true;
+//     }
+// }
+
+// -------------ЗАДАЧА 4--------------------
+// Дан input.i - 4. Напишите функцию t4, которая выводит в.out - 4 только символы в нижнем регистре.Т.е.ввели ab4Bci в out получаем ab4bci.
+// let out4 = document.querySelector('.out-4')
+// document.querySelector(".input-4").onkeypress = function t4(event) {
+//     out4.innerHTML += event.key.toLowerCase();
+// }
+
+// ---------Задача 5--------------------
+// Дан input.i - 5. Напишите функцию t5, которая выводит в.out - 5 все вводимые символы в верхнем регистре.Т.е.пользователь ввел AbCd и функция выведет ABCD.
+// let out5 = document.querySelector('.out-5')
+// document.querySelector(".input-5").onkeypress = function t5(event) {
+//     out5.innerHTML += event.key.toUpperCase();
+//     console.log(event);
+// }
+
+// ----------Задача 6------------------------
+// Дан input.i - 6. Напишите функцию t6, которая выводит в.i - 6 только символы в нижнем регистре.
+// let out6 = document.querySelector(".out-6");
+// document.querySelector(".input-6").onkeypress = function t6(event) {
+//     if (event.charCode >= 100) {
+//         out6.innerHTML = event.key;
+//     }
+// }
+
+// ----------Задача 7------------------------
+// Дан input.i - 7. Напишите функцию t7, которая выводит в.out - 7 случаный символ из массива a7 при каждом вводе символа.
